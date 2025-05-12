@@ -30,9 +30,6 @@ public class Room
 		this.capacity = capacity;
 	}
 	
-	//public boolean isAvailable(String timeSlot)
-	//{
-		//if 
-	//}
+	            
 }
 

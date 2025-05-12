@@ -24,6 +24,7 @@ public class DataStore
 		this.departments = departments;
 		this.terms = terms;
 		this.faculty = faculty;
+		
 	}
 	public ArrayList<User> getUsers() {
 		return users;

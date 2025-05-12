@@ -4,6 +4,7 @@ import java.util.*;
 public class ProposedSchedule 
 {
 	String scheduled;
+	boolean complete = false;
 	ArrayList<Course> courses;
 	
 	public ProposedSchedule(String scheduled, ArrayList<Course> courses) 
