@@ -53,9 +53,16 @@ public class SchedulingService
 		return false;
 	}
 	
-	public boolean checkInterProgramConflict(ProposedSchedule)
-	{
-		
+	public boolean checkInterProgramConflict(ProposedSchedule PropSched, Department A, Department B)
+	{ // Checks conflict in scheduling rooms at the same time between departments
+		if ()
 		
 	}
+	public void addCoursetoProposedSchedule(ProposedSchedule schedule, Course course)
+	{
+		schedule.addCourse(course);
+		
+	}
+	
+	public void rem
 }

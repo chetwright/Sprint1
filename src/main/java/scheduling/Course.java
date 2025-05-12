@@ -11,16 +11,16 @@ public class Course
 	Room room;
 	ArrayList<String> genEdTags;
 	public Course(String courseId, String courseName, String department, String instructor,
-			ArrayList<String> crossListedCodes, String timeSlot, Room room, ArrayList<String> genEdTags) {
+			String timeSlot, Room room) {
 		
 		this.courseId = courseId;
 		this.courseName = courseName;
 		this.department = department;
 		this.instructor = instructor;
-		this.crossListedCodes = crossListedCodes;
+		this.crossListedCodes = new ArrayList<>();
 		this.timeSlot = timeSlot;
 		this.room = room;
-		this.genEdTags = genEdTags;
+		this.genEdTags = new ArrayList<>();
 	}
 	public String getCourseId() {
 		return courseId;
@@ -49,6 +49,12 @@ public class Course
 	public ArrayList<String> getCrossListedCodes() {
 		return crossListedCodes;
 	}
+	public void addCrossListedCode(String crossCode)
+	{
+		crossListedCodes.add(crossCode);
+	}
+	
+
 	public void setCrossListedCodes(ArrayList<String> crossListedCodes) {
 		this.crossListedCodes = crossListedCodes;
 	}
@@ -66,6 +72,10 @@ public class Course
 	}
 	public ArrayList<String> getGenEdTags() {
 		return genEdTags;
+	}
+	public void addGenEdTags(String tag)
+	{
+		genEdTags.add(tag);
 	}
 	public void setGenEdTags(ArrayList<String> genEdTags) {
 		this.genEdTags = genEdTags;
