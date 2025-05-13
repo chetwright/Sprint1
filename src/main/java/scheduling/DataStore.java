@@ -10,11 +10,11 @@ public class DataStore
 	private ArrayList<AbstractCourseConstraint> constraints;
 	private ArrayList<String> possibleClassTimes;
 	private ArrayList<String> departments;
-	private ArrayList<String> terms;
+	//private ArrayList<String> terms;
 	private ArrayList<User> faculty;
 	public DataStore(ArrayList<User> users, ArrayList<Course> courses, ArrayList<Room> rooms,
 			ArrayList<AbstractCourseConstraint> constraints, ArrayList<String> possibleClassTimes,
-			ArrayList<String> departments, ArrayList<String> terms, ArrayList<User> faculty) {
+			ArrayList<String> departments, /*ArrayList<String> terms*/, ArrayList<User> faculty) {
 		
 		this.users = users;
 		this.courses = courses;
@@ -22,7 +22,7 @@ public class DataStore
 		this.constraints = constraints;
 		this.possibleClassTimes = possibleClassTimes;
 		this.departments = departments;
-		this.terms = terms;
+		//this.terms = terms;
 		this.faculty = faculty;
 		
 	}
